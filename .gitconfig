@@ -1,0 +1,11 @@
+[user]
+	name = edy4c7
+	email = edy4c7@gmail.com
+[core]
+	editor = vim
+[alias]
+	c = commit -m
+	puoh = push -u origin HEAD
+	a = add .
+	rb = rebase master
+	ll = log --oneline
