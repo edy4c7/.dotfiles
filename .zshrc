@@ -16,5 +16,9 @@ export NODE_VERSIONS=~/.node_versions
 eval "$(direnv hook zsh)"
 
 # Customize to your needs...
+# golang
+export PATH=$PATH:/usr/local/go/bin
+
+# aliases
 alias ssha="exec ssh-agent $SHELL"
 alias esl="exec $SHELL -l"
