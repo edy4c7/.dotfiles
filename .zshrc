@@ -18,6 +18,11 @@ eval "$(direnv hook zsh)"
 # Customize to your needs...
 # golang
 export PATH=$PATH:/usr/local/go/bin
+if [ -v GOPATH ]; then
+  export PATH=$PATH:$GOPATH/bin
+else
+  export PATH=$PATH:$HOME/go/bin
+fi
 
 # aliases
 alias ssha="exec ssh-agent $SHELL"
